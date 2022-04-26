@@ -10,6 +10,9 @@
 .section{
     height: 100vh;
 }
+.section:nth-child(even){
+    background-color:#cf6a87;
+}
 
 footer{
     bottom: 0px;
