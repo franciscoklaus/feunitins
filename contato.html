@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <title>Formulário de Contato</title>
+</head>
+<body>
+    <div class="container">
+        <div>
+        <!-- 
+contato.html: página com formulário de contato com os seguintes campos
+ Nomes*
+ E-mails*
+ Telefones
+ Cidade (5 opções) (campo select)
+ Estado (3 opções) (campo select)
+ Idade
+ Sexo*: Feminino ou Masculino (campo radio)
+ Motivo do Contato*: Dúvida – Elogio – Outro (campo select)
+ Área de Texto* (para o motivo)
+ Esta página também deve conter o título (mesmo das outras páginas)
+ o subtítulo deve ser “Formulário de Contato”
+ deve conter o mesmo menu ou links para as outras páginas 
+
+
+        -->
+        
+        <div class="section">
+            <form action="" method="post">
+                <div class="mb-3">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="" name="">
+                </div>
+                <div class="mb-3">
+                    <label for="name">Email</label>
+                    <input type="email" class="form-control" id="" name="">
+                </div>
+
+                <div class="mb-3">
+                    <label for="name">Phone</label>
+                    <input type="text" class="form-control" id="" name="">
+                </div>
+
+                
+                <div class="address_content mb-3">
+                    <div class="mb-3">
+                        <label for="name">Estado</label>
+                        <select class="form-select" aria-label="Default select example" id="states">
+                            <option value="">Selecione um estado</option>
+                        </select>   
+                    </div>     
+                        
+                    <div class="mb-3">
+                        <label for="name">Cidade</label>
+                        <select class="form-select" aria-label="Default select example"  id="cities" disabled>
+                            <option value="">Selecione um estado</option>
+                        </select>
+
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="name">Message</label>
+                    <textarea class="form-control" id="" name=""></textarea>
+                </div>
+            </form>
+        </div>
+
+        
+    </div>
+    <script src="assets/js/script.js"></script>
+    <script>
+        
+        populatedStateSelect()
+        populateCitySelect()
+    </script>
+</body>
+</html>

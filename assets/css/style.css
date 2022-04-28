@@ -3,6 +3,10 @@
     padding: 0px;
 }
 
+body{
+    box-sizing: content-box;
+}
+
 .menu{
     color:red;
 }
@@ -14,9 +18,10 @@
     background-color:#cf6a87;
 }
 
+
+
 footer{
-    bottom: 0px;
-    height: 50px;
+    bottom: auto;
     width: 100%;
     background: white;
     border-top: 1px solid black;
