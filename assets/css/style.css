@@ -18,7 +18,26 @@ body{
     background-color:#cf6a87;
 }
 
+.container-geral{
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 0 auto;
+}
 
+.container-conteudo{
+    display:flex;
+}
+
+.container-conteudo-item{
+    flex-grow: 1;
+    padding-right:5px;
+}
+
+#text-area{
+    resize: none;
+    height: 150px;
+    line-break: auto;
+}
 
 footer{
     bottom: auto;

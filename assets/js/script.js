@@ -24,6 +24,7 @@ function populateCitySelect(){
             selectCities.removeAttribute('disabled');
             cities.map(city => {
                 const option = document.createElement('option');
+                option.setAttribute('value', city.nome);
                 option.textContent = city.nome;
                 selectCities.appendChild(option);
             })

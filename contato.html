@@ -10,68 +10,93 @@
     <title>Formulário de Contato</title>
 </head>
 <body>
-    <div class="container">
-        <div>
-        <!-- 
-contato.html: página com formulário de contato com os seguintes campos
- Nomes*
- E-mails*
- Telefones
- Cidade (5 opções) (campo select)
- Estado (3 opções) (campo select)
- Idade
- Sexo*: Feminino ou Masculino (campo radio)
- Motivo do Contato*: Dúvida – Elogio – Outro (campo select)
- Área de Texto* (para o motivo)
- Esta página também deve conter o título (mesmo das outras páginas)
- o subtítulo deve ser “Formulário de Contato”
- deve conter o mesmo menu ou links para as outras páginas 
-
-
-        -->
-        
-        <div class="section">
-            <form action="" method="post">
+    <div class="container-fluid">
+        <aside class="menu">
+            <section class="main-content"> 
+                <h1>
+                    LOGO
+                </h1>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Quem sou</a>
+                        </li>
+                        <li>
+                            <a href="contato.html">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+        </aside>
+        <div class="container">
+            <form class="" action="" method="post">
                 <div class="mb-3">
                     <label for="name">Name</label>
                     <input type="text" class="form-control" id="" name="">
                 </div>
-                <div class="mb-3">
-                    <label for="name">Email</label>
-                    <input type="email" class="form-control" id="" name="">
-                </div>
+                <div class="mb-3 container-conteudo">
+                    <div class="mb-3 container-conteudo-item">
+                        <label for="name">Email</label>
+                        <input type="email" class="form-control" id="" name="">
+                    </div>
 
-                <div class="mb-3">
-                    <label for="name">Phone</label>
-                    <input type="text" class="form-control" id="" name="">
+                    <div class="mb-3 container-conteudo-item">
+                        <label for="name">Phone</label>
+                        <input type="text" class="form-control" id="" name="">
+                    </div>
                 </div>
 
                 
-                <div class="address_content mb-3">
-                    <div class="mb-3">
+                <div class="mb-3 container-conteudo">
+                    <div class="container-conteudo-item">
                         <label for="name">Estado</label>
                         <select class="form-select" aria-label="Default select example" id="states">
                             <option value="">Selecione um estado</option>
                         </select>   
                     </div>     
                         
-                    <div class="mb-3">
+                    <div class="container-conteudo-item">
                         <label for="name">Cidade</label>
                         <select class="form-select" aria-label="Default select example"  id="cities" disabled>
-                            <option value="">Selecione um estado</option>
+                            <option value="">Selecione uma cidade</option>
                         </select>
 
                     </div>
                 </div>
+                <div class="mb-3 container-conteudo">
+                    <div class="form-check container-conteudo-item">
+                        <input class="form-check-input" type="radio" name="sexo" id="exampleRadios1" value="feminino">
+                        <label class="form-check-label" for="exampleRadios1">
+                            Feminino
+                        </label>
+                    </div>
+                    <div class="form-check container-conteudo-item">
+                        <input class="form-check-input" type="radio" name="sexo" id="exampleRadios2" value="masculino">
+                        <label class="form-check-label" for="exampleRadios2">
+                            Masculino
+                        </label>
+                    </div>
+                </div>
+
+                <div class="mb-3 container-conteudo-item">
+                    <label for="motivo_contato">Motivo do Contato</label>
+                    <select class="form-select" aria-label="Default select example"  id="motivo_contato">
+                        <option value="">Selecione uma opção</option>
+                        <option value="duvida">Dúvida</option>
+                        <option value="elogio">Elogio</option>
+                        <option value="outro">Outro</option>    
+                    </select>
+                </div>
 
                 <div class="mb-3">
                     <label for="name">Message</label>
-                    <textarea class="form-control" id="" name=""></textarea>
+                    <textarea class="form-control" id="text-area" name=""></textarea>
                 </div>
             </form>
         </div>
-
-        
     </div>
     <script src="assets/js/script.js"></script>
     <script>
