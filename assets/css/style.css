@@ -16,10 +16,13 @@ body{
 .section{
     height: 100vh;
 }
-.section:nth-child(even){
-    background-color:#cf6a87;
-}
 
+.container-conteudo-form{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 62px);
+}
 
 
 .container-conteudo{
