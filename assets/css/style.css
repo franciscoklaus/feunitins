@@ -5,6 +5,8 @@
 
 body{
     box-sizing: content-box;
+    height: 100vh;
+    width: 100vw;
 }
 
 .menu{
@@ -18,11 +20,7 @@ body{
     background-color:#cf6a87;
 }
 
-.container-geral{
-    border: 1px solid black;
-    border-radius: 5px;
-    margin: 0 auto;
-}
+
 
 .container-conteudo{
     display:flex;
@@ -40,8 +38,5 @@ body{
 }
 
 footer{
-    bottom: auto;
-    width: 100%;
-    background: white;
-    border-top: 1px solid black;
+    
 }
