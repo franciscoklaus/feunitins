@@ -66,11 +66,41 @@ footer{
     padding: 5px;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
-    font-size: 30px;
+    font-size: 20px;
     text-transform: uppercase;
+}
+
+.texto {
+
+align-items: center;
 }
 
 #foto_pessoal{
     width: 250px;
     height: 250px;
+    border-radius: 50%;
+    justify-content: center;
+}
+.boxFoto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.grupocard{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 180px;
+
+
+}
+
+.caixote{
+    width: 40%;
+    border-radius: 15px;
+    padding: 16px;
+    background-color: #b1bfd8;
+    background-image: linear-gradient(315deg, #b1bfd8 0%, #6782b4 74%);
+    box-shadow: 20px 20px 20px black;
 }
