@@ -3,10 +3,9 @@
     padding: 0px;
 }
 
+
 body{
     box-sizing: content-box;
-    height: 100vh;
-    width: 100vw;
 }
 
 .menu{
@@ -44,11 +43,9 @@ body{
     border-top: #000 solid 2px;
     background-color: gray;
     color: #f2fffc;
-    clear: both;
     }
 
 footer{
-    position: fixed;
 	bottom: 0;
 	left: 0;
 	width: 100%; 
@@ -91,16 +88,33 @@ align-items: center;
 .grupocard{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin: 0 180px;
+    margin-bottom: 50px;
+    align-content: center;
 
 
 }
 
 .caixote{
-    width: 40%;
+    width: 30vw;
     border-radius: 15px;
     padding: 16px;
     background-color: #b1bfd8;
     background-image: linear-gradient(315deg, #b1bfd8 0%, #6782b4 74%);
     box-shadow: 20px 20px 20px black;
+}
+
+@media screen and (max-width: 720px) {
+    
+    .grupocard{
+        margin: 0 20px;
+        margin-bottom: 50px;
+        justify-content: center;
+    }
+
+    .caixote{
+        width: 80vw;
+        margin-top: 30px;
+    }
 }
