@@ -160,7 +160,7 @@ footer{
 }
 
 .img_pessoal{
-    width: 100%;
+    width: 50%;
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
 }
@@ -198,6 +198,12 @@ footer{
     .info_pessoal{
         display: flex;
         flex-direction: column;
+    }
+
+    .img_pessoal{
+        width: 100%;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
     }
 
     .biografia{
