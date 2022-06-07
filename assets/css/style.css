@@ -1,6 +1,7 @@
-*{
-    margin:0px;
-    padding: 0px;
+
+html{
+    max-height: 100vh;
+    max-width: 100%;
 }
 
 h1{
@@ -15,15 +16,18 @@ p{
 }
 
 body{
-    box-sizing: content-box;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
 }
 
 .menu{
     color:red;
 }
 
-.section{
-    height: 100vh;
+.container{
+    width: 100vw;
+    height: 100;
 }
 
 .container-conteudo-form{
@@ -50,27 +54,12 @@ body{
     line-break: auto;
 }
 
-.rodape {
-    border-top: #000 solid 2px;
-    background-color: #5a544f;
-    color: #f2fffc;
-    }
-
 footer{
 	bottom: 0;
-	left: 0;
-	width: 100%; 
-	box-sizing: border-box; 
+	text-align: center;
     }
 
-.pagina {
-    color: white;
-    }
-
-
-
-.grupogerdado{
-
+    .grupogerdado{
     display : flex;
     flex-direction : row;
     background-color: #fcefe3;      
@@ -108,60 +97,72 @@ footer{
     padding: 50px
 }
 
-.imagema{
+.imagem{
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+}
+
+
+.logo{
+    width: 52px;
+}
+.a {
     background-image: url(/assets/imgs/gerenciamento.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 50%;
 }
 
-.imagemb{
+.b{
     background-image: url(/assets/imgs/seguranca.jpeg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 50%;
 }
 
-.imagemc{
+.c{
     background-image: url(/assets/imgs/solucao.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 50%;
+}
+
+.conteudo-biografia{
+    width: 100%;
 }
 
 .empresa{
     background-color: #fcefe3; 
-    padding: 20px 100px 20px;
-    text-align:justify;text-align:justify;
+    width: 100%;
+    padding:5px;
 }
 
-.grupomarcos{
+.info_pessoal{
     display : flex;
+    justify-content: center;
+    align-items: center;
     flex-direction : row;
+}
+ .marcos{
     background-color: #928980;
-}
+ }
 
-
-.grupofrancisco{
-    display : flex;
-    flex-direction : row;
+.francisco{
     background-color: #4d4742;
 }
 
 .biografia{
-    width: 50%;
+    width: 100%;
     color: white;
     text-align:justify;
-    padding: 50px
+    padding: 10px;
 
 }
+
 .caixote {
-    width: 50%;
-    padding: 10px;
-    margin-left: 50px;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.img_pessoal{
+    width: 100%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
 }
 
 .titulo {
@@ -176,79 +177,53 @@ footer{
 }
 
 .texto {
-align-items: center;
-text-align: justify;
+    align-items: center;
+    text-align: justify;
 
-}
-#foto_pessoal{
-    border-radius: 50%;
-    width: auto;
-    height: auto;
-    padding: 5px;
 }
 
 .boxFoto{
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .boxcarro{
-
     margin: auto;
-    width: 50%;
-    height: 100%;
-
-}
-
-
-
-
-@media screen and (max-width: 720px) {
-    
-    .grupomarcos{
-        display: block;
-    }
-
-    .grupofrancisco{
-        display: block;
-
-    }
-
-   .caixote{
-       margin-left: 50px;
-   }
-    
-
-    .biografia{
     width: 100%;
 }
 
+
+@media screen and (max-width: 720px) {    
+    .info_pessoal{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .biografia{
+        width: 100%;
+    }
     .grupogerdado{
         display: block;
     }
-
     .gruposergdado{
         display: block;
     }
-
     .gruposoluemp{
         display: block;
     }
-
     .sergdado{
         width: 100%;
+        height: 100%;
     }
-
     .gerdado{
         width: 100%;
+        height: 100%;
     }
-
     .soluemp{
         width: 100%;
+        height: 100%;
     }
-
     
 }
 
